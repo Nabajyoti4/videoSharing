@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Philosopher|Boogaloo" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <div class="allusers">
+        <div class="validuser">
+         
+            <h1 class="u-center-text u-margin font-medium">   <span>_______</span>Valid Users   <span>_______</span></h1>
+           
+
+
+            <ul class="adminlist">
+                <li class="userlitem">cs16msiit004@kazirangauniversity.in <button type="button" class=""><i
+                            class="fas fa-minus-square font-small"></i></button></li>
+                <li class="userlitem">cs16msiit004@kazirangauniversity.in <button type="button" class=""><i
+                            class="fas fa-minus-square font-small"></i></button></li>
+                <li class="userlitem">cs16msiit004@kazirangauniversity.in <button type="button" class=""><i
+                            class="fas fa-minus-square font-small"></i></button></li>
+
+            </ul>
+        </div>
+        <div class="adduser">
+            <br>
+            <h1 class="u-center-text u-margin font-medium">Add User</h1>
+            <form action="#" class="form" style="padding-left:9rem;">
+
+                <!-- creating form group for every fields -->
+                <div class="form__group">
+                    <label for="Adduser_fname" class="form__label">FirstName</label>
+                    <input type="text" id="Adduser_fname" class="form__input form__input__signup"
+                        placeholder="FirstName" required="true">
+                </div>
+                <div class="form__group">
+                    <label for="Adduser_lname" class="form__label">LastName</label>
+                    <input type="text" id="Adduser_lname" class="form__input form__input__signup" placeholder="LastName"
+                        required>
+                </div>
+                <div class="form__group">
+                    <label for="signup_email" class="form__label">E-mail</label>
+                    <input type="email" id="signup_email" class="form__input form__input__signup" placeholder="E-mail"
+                        required>
+                </div>
+                <div class="form__group">
+                    <label for="Adduser_UID" class="form__label">User ID</label>
+                    <input type="text" id="Adduser_UID" class="form__input form__input__signup"
+                        placeholder="Enter UserId" required>
+                </div>
+                <!-- Adduser button -->
+                <div class="flex-center">
+                    <button class="btn btn--blue" id="Adduser" type="submit">Add
+                        <i class="fas fa-arrow-circle-right"></i></button>
+
+                </div>
+
+
+
+            </form>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

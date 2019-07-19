@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- google font style -->
+    <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Philosopher" rel="stylesheet">
+    <!-- Icon on Title  -->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+        integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Dashboard | Manage your Videos</title>
+</head>
+
+<body>
+    <!-- Dashboard -->
+    <!-- navigation bar -->
+    <div class="navigationbar">
+
+
+
+        <!-- name of the Application -->
+        <div class="navbarfont navigationbar--left">
+            <i class="fas fa-camera-retro navbar_items u-margin-right-large"></i>
+            <a href="card.html" class="navbar_items navbar_title">Vidshare </a>
+        </div>
+
+        <!-- for right option such as search, user profile, upload -->
+        <div class="navbarfont navigationbar--right ">
+
+            <!--Search button-->
+
+            <div class="search navbar_items ">
+                <input type="text" placeholder="Search" class="search__input" required>
+                <button type="button" class="search__btn" id="searchButton">
+                    <i class=" fa fa-search search__icon" aria-hidden="true"></i>
+                </button>
+            </div>
+            <!--seacrh button end-->
+
+
+            <!-- user button -->
+
+            <button type="button" class="navbar_items navbar_items--icon userbutton"><i
+                    class="fas fa-user-circle"></i></button>
+
+
+            <div class="usercontainer">
+
+                <!-- if user signed the following div will be displayed -->
+                <div class="signincontainer">
+                    <img src="img/icons/man.png" class="signincontainer__img" alt="">
+                    <ul class="ul__list">
+                        <li class="ul__list--items">
+                            <h1 class="accountHolderName">Raju Moni Borah</h1>
+                        </li>
+                        <li class="ul__list--items">
+                            <h2 class="accountHolderId">cs16msiit020@kazirangauniversity.in</h2>
+                        </li>
+                        <li class="ul__list--items"><a href="settings.html" class="list--link font-small"> Account</a>
+                            &nbsp;
+
+                            <a href="dashboard.html" class="list--link font-small">My videos</a></li>
+
+                        <!-- list item for progress bar -->
+                        <li class="ul__list--items ul__list--items--progress ">
+                            <!-- line  128  navigationbar.scsss  -->
+                            <div class="progressbox">
+                                <h4 class="progressbox__text">FILENAME heloooooooooooooooooooooooooooooooooo</h4>
+                                <progress class="progressbox__bar" value="50" max="100"></progress>
+                                <div class="progressbox__percentage">50%</div>
+                                <div class="progressbox__btn">
+                                    <button type="button" class="progressbox__play vidbtn"><i
+                                            class="fas fa-play-circle"></i></button>
+                                    <button type="button" class="progressbox__pause vidbtn"><i
+                                            class="far fa-pause-circle"></i></button>
+                                    <button type="button" class="progressbox__cancel vidbtn"><i
+                                            class="far fa-window-close"></i></button>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="ul__list--items"><button type="button"
+                                class="btn btn--green btn--green--logout">Logout</button></li>
+
+
+                    </ul>
+                </div>
+                <!-- if user is signed out then -->
+                <div class="notsignincontainer">
+                    <div class="notsignincontainer__imgdiv">
+                        <img class="notsignincontainer__img" src="img/display.jpg" alt="">
+                    </div>
+                    <ul class="ul__list">
+                        <li><a href="login.html" class="btn btn--front">login</a>
+                            <a href="signup.html" class="btn btn--front">Signup</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ending of navigation bar -->
+
+    <!-- dashboard playlist-->
+    <div class="dashboardplaylist">
+        <!-- for playlist descrpition and other details -->
+        <div>
+            <!-- playlist details-->
+            <div class="vcard vcard--playlist">
+                <!-- the thumbnail position  vcard 1 st part-->
+                <div class="vcard--img vcard--img--playlist1">
+                    <!-- the tag for video  defining the category of video-->
+                    <h1 class="vcard--tag vcard--tag--playlist"> <button class="btn btn--front"> play all</button>
+                    </h1>
+
+                </div>
+                <!-- the division that contain the information of the video .It is the second part of the vcard -->
+                <div class="vcard__info">
+
+                    <div class="vcard__info--title ">
+                        <!-- dynamiv title of the video -->
+                        <span>
+                            JavaScript Tutorial.
+                        </span>
+                    </div>
+                    <!-- timestamp when the video was created -->
+                    <span class="timestamp font-small">Created on: 15-04-2019</span>
+                    <button class="u-end-text btn btn--trans"><i class="fas fa-list"></i></button>
+
+                    <ul class="list--option list--option--plist ">
+                        <li class="list--items list--items--option"><a href="/editplaylist.html"
+                                class="btnlist font-xsmall">Edit title &
+                                description</a> </li>
+                        <li class="list--items list--items--option"><a href="/addvideo.html"
+                                class="btnlist font-xsmall">Add
+                                video</a> </li>
+                        <li class="list--items list--items--option"><button
+                                class="btnlist btnlist--btn font-xsmall">Delete playlist</button>
+                        </li>
+                        <li class="list--items list--items--option"><button
+                                class="btnlist btnlist--btn font-xsmall">Delete all the
+                                video</button> </li>
+                    </ul>
+                    <br>
+                    <div class="font-small ">
+                        <i class="fas fa-eye"></i> 12k views
+                    </div>
+
+                    <span style="font-weight: 550;">Description: </span><br>
+                    <!-- dynamic descrptiob of the video -->
+                    <span class="vcard__info--des">The series of video will help the viewes to ...
+                    </span>
+
+
+                </div>
+
+            </div>
+            <!-- end of vcard -->
+        </div>
+        <!-- list of video on the playlist  -->
+        <ul class="list hauto">
+            <!-- playlist video--1 -->
+            <li class="list--items">
+
+                <!-- video cards -->
+                <div class="vcard gridplaylist gridplaylist--1">
+                    <!-- the thumbnail position  vcard 1 st part-->
+                    <div class="vcard--img vcard--img--playlist">
+
+                    </div>
+                    <!-- the division that contain the information of the video .It is the second part of the vcard -->
+                    <div class="vcard__info">
+                        <div class="vcard__info--title ">
+                            <!-- dynamiv title of the video -->
+                            <span>
+                                Fun way to Learn JavaScript.
+                            </span>
+                        </div>
+                        <!-- timestamp when the video was created -->
+                        <span class="timestamp font-small">Created on:</span>
+                        <p class="timestamps"> Sun jul 14 2019 00:27:21 GMT+0530 (India Standard Time)</p>
+                        <button class="u-end-text btn btn--trans"><i class="fas fa-list"></i></button>
+                        <ul class="list list--option list--option--playlist">
+                            <li class="list--items list--items--option"><a href="/editvideo.html"
+                                    class="btnlist font-xsmall">Edit title &
+                                    description</a> </li>
+                            <li class="list--items list--items--option"><button
+                                    class="btnlist  btnlist--btn font-xsmall">Delete the
+                                    video</button> </li>
+                            <li class="list--items list--items--option"><button
+                                    class="btnlist  btnlist--btn font-xsmall">Remove from playlist
+                                </button> </li>
+                        </ul>
+
+                        <br>
+                        <div class="playlist--desc">
+                            <span><b>Description: </b></span>
+                            <!-- dynamic descrptiob of the video -->
+                            <span class="vcard__info--des">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Nihil
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- end of vcard -->
+            </li>
+
+            <!-- playlist video--2 -->
+
+        </ul>
+    </div>
+
+    <!-- hide the navbar when scroll -->
+    <script src="js/navbar.js"></script>
+    <!-- display js for user container -->
+    <script src="js/display.js"></script>
+
+
+</body>
+
+</html>

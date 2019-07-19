@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Philosopher" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Icon on Title  -->
+    <link rel="icon" type="image/png" href="img/icons/avatar.png" />
+    <!-- css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Signup | Create free account</title>
+</head>
+
+<body>
+    <div class="signup">
+        <div class="signup__container">
+            <!-- signup form section -->
+            <form action="#" class="form form--signup">
+                    <!-- home link -->
+                    <a href="home.html" class="login__home"><i class="fas fa-home"></i></a> 
+             
+                <!-- form heading -->
+                <div class="u-center-text ">
+                    <h1 class="heading_tag">SIGN UP</h1>
+                </div>
+                <!-- creating form group for every fields -->
+                <div class="form__group">
+                    <label for="singup_firstname" class="form__label">FirstName</label>
+                    <input type="text" id="singup_firstname" class="form__input form__input__signup"
+                        placeholder="FirstName" required="true">
+                </div>
+                <div class="form__group">
+                    <label for="signup_lastname" class="form__label">LastName</label>
+                    <input type="text" id="signup_lastname" class="form__input form__input__signup"
+                        placeholder="LastName" required>
+                </div>
+                <div class="form__group">
+                    <label for="signup_email" class="form__label">E-mail</label>
+                    <input type="email" id="signup_email" class="form__input form__input__signup" placeholder="E-mail"
+                        required>
+                </div>
+                <div class="form__group">
+                    <label for="signup_passwd" class="form__label">Password</label>
+                    <input type="password" id="signup_passwd" class="form__input form__input__signup"
+                        placeholder="Enter Password" required>
+                </div>
+                <div class="form__group">
+                    <label for="signup_confirm_passwd" class="form__label">Confirm Password</label>
+                    <input type="password" id="signup_confirm_passwd" class="form__input form__input__signup"
+                        placeholder="Re-Enter Password" required>
+                </div>
+                <div class="flex-center">
+                 <!-- signup button -->
+                <button class="btn btn--blue " id="signup" type="submit">Sign
+                    Up <i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+              
+                <div class="font-small u-center-text ">
+                    Already a User Click here...
+                    <a href="login.html">Login</a></div>
+
+            </form>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

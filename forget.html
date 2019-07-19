@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Philosopher" rel="stylesheet">
+    <!--AOS SCRIPT-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Icon on Title  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+        integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Video sharing web appllication</title>
+</head>
+
+<body>
+    <!-- Creating Login Section -->
+    <section class="login">
+
+        <div class="login__container">
+            <!-- Login form -->
+            <form action="#" class="form form--login">
+                <!-- home link -->
+                <a href="home.html" class="login__home"><i class="fas fa-home"></i></a>
+                <div class="flex-center">
+                    <!--signin  logo -->
+                    <img src="img/icons/confused.png" class="login__logo " />
+                </div>
+                <!-- form heading -->
+                <div class="u-margin-bottom-small  u-center-text  large-font">
+                    <h1 class="heading_tag">Forgot password </h1>
+                </div>
+
+                <!-- creating form group  for every fields-->
+                <div class="form__group">
+                    <label for="email" class="form__label form__label--login">E-mail</label>
+                    <i class="fas fa-envelope form__input__login--icons form__input__login--icons--iconuser"></i>
+                    <input type="email" id="signin_email" class="form__input form__input__login" placeholder="Email"
+                        required>
+                </div>
+                <div class="u-center-text ">
+                    <!-- login button -->
+                    <button class="btn btn--green btn--green--login " id="forget_passwordBtn">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

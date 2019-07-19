@@ -1,0 +1,19 @@
+{
+  "name": "videosharing",
+  "version": "1.0.0",
+  "description": "video sharing web app",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Naba",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "autoprefixer": "^9.5.0",
+    "video.js": "^7.4.1"
+  }
+}
